@@ -19,17 +19,16 @@ function DisplayWeather(props) {
             </span>
 
             <h1>
-              {" "}
               {Math.floor(data.main.temp - 273.15)}
               <sup>o</sup>
             </h1>
             <span className="weather-main">{data.weather[0].main}</span>
             <img className="weather-icon" src={iconurl} alt="" srcSet="" />
             <span className="weather-description">
-              {" "}
               {data.weather[0].description}
             </span>
           </div>
+
           <div className="weatherdetails">
             <div className="section1">
               <table>
@@ -45,6 +44,7 @@ function DisplayWeather(props) {
                       </span>
                     </td>
                   </tr>
+
                   <tr>
                     <td>
                       <h4>Humidity</h4>
@@ -53,6 +53,7 @@ function DisplayWeather(props) {
                       <span>{data.main.humidity} %</span>
                     </td>
                   </tr>
+
                   <tr>
                     <td>
                       <h4>Pressure</h4>
@@ -61,6 +62,7 @@ function DisplayWeather(props) {
                       <span>{data.main.pressure} hPa</span>
                     </td>
                   </tr>
+
                   <tr>
                     <td>
                       <h4>Visibility</h4>
